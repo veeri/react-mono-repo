@@ -1,0 +1,21 @@
+{
+  "name": "@vee/MonoRepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "veeresh",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "scripts": {
+    "start": "lerna exec --scope @vcode/webclient -- yarn start",
+    "bootstrap": "lerna exec yarn install"
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "lerna": "^7.2.0"
+  }
+}
